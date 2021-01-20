@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800&family=Roboto&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat;
+}
+
+body{
+    background: linear-gradient(to bottom, #ae85fe 0%,#8666ff 0%,#ae85fe 0%,#8666ff 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 700px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 1.2em;
+    background: linear-gradient(to bottom, #ae85fe 0%,#8666ff 0%,#ae85fe 0%,#8666ff 100%);
+
+}
+
+.navbar > img{
+    cursor: pointer;
+}
+
+.navbar > div{
+    float: right;
+    word-spacing: 15px;
+}
+
+.navbar > div > span > a{
+    color: white;
+    font-size: .9rem;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar > div >  button, .header-section > div > div > button{
+    background-color: white;
+    padding: .8em 2.5em;
+    font-weight: bold;
+    color: #8e6cff;
+    border-radius: 35px;
+    border-width: 0px;
+    font-size: .9rem;
+    cursor: pointer;
+    box-shadow: 0 10px 35px 2px rgba(61, 61, 61, .2);
+}
+
+button:focus{
+    outline-width: 0px;
+}
+
+.header{
+    padding: 2em;
+    color: white;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.header-section > div{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.header-section > div > h1{
+    font-size: 3rem;
+}
+
+.header-section > div > p{
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.header-section > div > div{
+    margin-top: 40px;
+}
+
+.header-section > div > div > button:nth-child(2){
+    margin-left: 10px;
+    
+}
+
+.header-section > div > div > button:nth-child(1){
+    vertical-align: bottom;
+}
+
+
+
+.header-section > div > div > button:nth-child(2) > span{
+    vertical-align: super;
+}
+
+.header-section > div > div > button:nth-child(2) > i{
+    font-size: 2rem;
+}
+
+.header-section > div > div > button{
+    padding: 0px;
+    width: 130px;
+    height: 50px;
+}
+
+
+.header-section > img{
+    order: 2;
+    width: 600px;
+    height: 500px;
+}
+
+@media screen and (max-width: 950px){
+    .header-section > img{
+        width: 500px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .header-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-section > div{
+        margin-top: 60px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    body{
+        background-size: 100vw 1000px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navbar > div{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .header-section > img{
+        width: 320px;
+        height: 280px;
+    }
+}
