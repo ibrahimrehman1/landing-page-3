@@ -9,6 +9,10 @@
     font-family: Roboto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: Montserrat;
 }
@@ -25,7 +29,7 @@ body{
     left: 0px;
     right: 0px;
     padding: 1.2em;
-    background: linear-gradient(to bottom, #ae85fe 0%,#8666ff 0%,#ae85fe 0%,#8666ff 100%);
+    z-index: 1000;
 
 }
 
@@ -129,6 +133,152 @@ button:focus{
     height: 500px;
 }
 
+.article-1{
+    padding: 2em;
+    margin-top: 20px;
+}
+
+.article-1-section-1{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.article-1-section-1 > div{
+    width: 400px;
+}
+
+.article-1-section-1 > div > h2{
+    font-size: 2rem;
+}
+
+.article-1-section-1 > div > p{
+    margin-top: 30px;
+    opacity: .6;
+    line-height: 25px;
+}
+
+
+.article-1-section-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.article-1-section-2 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    border-top: 4px solid white;
+
+}
+
+.article-1-section-2 > div > p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.article-1-section-2 > div > i{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #8666ff;
+}
+
+.article-1-section-2 > div:hover{
+    border-top: 4px solid #8666ff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 10px rgb(221, 221, 221);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 950px){
     .header-section > img{
         width: 500px;
@@ -148,6 +298,11 @@ button:focus{
         margin-bottom: 60px;
     }
 
+    .article-1-section-2 > div{
+        padding: 1em;
+        justify-content: space-around;
+    }
+
     body{
         background-size: 100vw 1000px;
     }
@@ -164,5 +319,24 @@ button:focus{
     .header-section > img{
         width: 320px;
         height: 280px;
+    }
+
+    .article-1{
+        margin-top: 120px;
+    }
+
+    .article-1-section-1{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .article-1-section-2{
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .article-1-section-2 > div{
+        margin-top: 40px;
     }
 }
