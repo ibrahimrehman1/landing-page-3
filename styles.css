@@ -30,7 +30,7 @@ body{
     right: 0px;
     padding: 1.2em;
     z-index: 1000;
-    transition-property: all;
+    transition-property: box-shadow padding;
     transition-timing-function: ease;
     transition-duration: 600ms;
 
@@ -326,14 +326,120 @@ button:focus{
 }
 
 .article-4 > img{
-    height: 500px;
+    height: 400px;
+    width: 100%;
 }
 
 
 .article-5{
     padding: 1em 0em;
-    margin-top: 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
 }
+
+.article-5 > img{
+    order: 1;
+    width: 480px;
+    height: auto;
+    position: relative;
+    right: 50px;
+    align-self: center;
+}
+
+.article-5-section-1{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+
+.article-5-section-1 > h3, .article-5-section-1 > div > h4{
+    opacity: .6;
+    user-select: none;
+
+
+}
+
+.article-5-section-1 > h2{
+    font-size: 2.2rem;
+}
+
+.article-5-section-1 > h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.article-5-section-1 > div{
+    padding: 1em;
+    border-radius: 10px;
+    transition-property: box-shadow, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.article-5-section-1 > p{
+    margin-top: 10px;
+    line-height: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+.article-5-section-1 > div:hover{
+    box-shadow: 0 10px 35px 2px rgba(61, 61, 61, .2);
+    color: #8666ff;
+
+}
+
+.add-style{
+    box-shadow: 0 10px 35px 2px rgba(61, 61, 61, .2);
+    color: #8666ff;
+}
+
+.show-p{
+    display: block !important;
+}
+
+.article-6{
+    padding: 2em 1em;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-color: #f9f7ff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.article-6 > img{
+    order: 2;
+    margin-top: 60px;
+    height: auto;
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+.article-6 > blockquote{
+    order: 1;
+    font-size: 1.2rem;
+    line-height: 30px;
+    opacity: .6;
+    font-weight: 500;
+    align-self: center;
+}
+
+.article-6 > blockquote > footer{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
 
 
 
