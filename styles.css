@@ -9,6 +9,10 @@
     font-family: Roboto;
 }
 
+:root{
+    --icon-color: #8666ff;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -504,6 +508,135 @@ button:focus{
     font-size: 1.5rem;
 }
 
+.footer{
+    padding: 2em 2em 1em 2em;
+    margin-top: 40px;
+    background-color:#2e303c;
+}
+
+.footer-section-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: white;
+}
+
+.footer-section-1 > h2{
+    order: 1;
+    font-size: 2.5rem;
+}
+
+.footer-section-1 > input{
+    order: 2;
+    width: 400px;
+    height: 60px;
+    padding: 0em 1.5em;
+    border-width: 0px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: rgb(29, 29, 29);
+    color: gray;
+    z-index: 1;
+}
+
+.footer-section-1 > input:focus{
+    outline-width: 0px;
+}
+
+.footer-section-1 > button{
+    font-weight: bold;
+    background-color: #8666ff;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    border-width: 0px;
+    order: 3;
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    right: 40px;
+    text-transform: uppercase;
+}
+
+.footer-section-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-section-2 > div:nth-child(1){
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    width: 300px;
+}
+
+.footer-section-2 > div:nth-child(1) > h4{
+    color: white;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.footer-section-2 > div:nth-child(1) > p{
+    color: gray;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.footer-section-2 > div:nth-child(1) > section{
+    margin-top: 30px;
+    display: flex;
+}
+
+.footer-section-2 > div:nth-child(1) > section > div{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fab-1{
+    margin-left: 12px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--icon-color);
+    transition: color .5s ease;
+}
+
+.footer-section-2 > div:nth-child(1) > section > div:hover{
+    --icon-color: white;
+    background-color: royalblue;
+    transition: background-color .5s ease;
+
+
+}
+
+.footer-section-2-divs{
+    margin-top: 30px;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+}
+
+.footer-section-2-divs > a{
+    text-decoration: none;
+    color: gray;
+    margin-top: 20px;
+
+}
+.footer-section-2-divs > h4{
+    color: white;
+}
+
+.copyright-statement{
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 
