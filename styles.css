@@ -141,7 +141,7 @@ button:focus{
     margin-top: 20px;
 }
 
-.article-1-section-1, .article-4-section-1{
+.article-1-section-1, .article-4-section-1, .article-7-section-1{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -150,15 +150,15 @@ button:focus{
     margin-bottom: 80px;
 }
 
-.article-1-section-1 > div, .article-4-section-1 > div{
+.article-1-section-1 > div, .article-4-section-1 > div, .article-7-section-1 > div{
     width: 400px;
 }
 
-.article-1-section-1 > div > h2, .article-4-section-1 > div > h2{
+.article-1-section-1 > div > h2, .article-4-section-1 > div > h2, .article-7-section-1 > div > h2{
     font-size: 2rem;
 }
 
-.article-1-section-1 > div > p{
+.article-1-section-1 > div > p, .article-7-section-1 > div > p{
     margin-top: 30px;
     opacity: .6;
     line-height: 25px;
@@ -237,7 +237,7 @@ button:focus{
     font-size: 2rem;
 }
 
-.article-2-sub-section > button, .article-3-sub-section > button{
+.article-2-sub-section > button, .article-3-sub-section > button, .article-7-section-2 > div > button{
     margin-top: 30px;
     display: inline-block;
     width: 150px;
@@ -386,10 +386,13 @@ button:focus{
 }
 
 .article-5-section-1 > p{
-    margin-top: 10px;
+    top: 10px;
     line-height: 25px;
-    display: none;
-    margin-left: 20px;
+    left: -1000px;
+    position: relative;
+    transition-property: left;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
 }
 
 .article-5-section-1 > div:hover{
@@ -404,7 +407,7 @@ button:focus{
 }
 
 .show-p{
-    display: block !important;
+    left: 20px !important;
 }
 
 .article-6{
@@ -434,12 +437,72 @@ button:focus{
     align-self: center;
 }
 
-.article-6 > blockquote > footer{
+.article-6 > blockquote > div > footer{
     font-weight: bold;
     margin-top: 10px;
     font-size: 1.5rem;
 }
+ 
+.article-7-section-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
 
+.article-7-section-2 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    box-shadow: 0 5px 15px 1px rgba(61, 61, 61, .2);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    min-height: 480px;
+}
+
+.article-7-section-2 > div > h4{
+    color: #8666ff;
+    font-size: 3rem;
+}
+
+.article-7-section-2 > div > h3{
+    font-size: 2rem;
+    opacity: .8;
+}
+
+.article-7-section-2 > div > h4 > sub{
+    color: black;
+    opacity: .6;
+    font-size: initial;
+}
+
+.article-7-section-2 > div > hr{
+    width: 80%;
+}
+
+.article-7-section-2 > div > button{
+    margin-top: 0px;
+}
+
+.article-7-section-2 > div > span{
+    opacity: .6;
+}
+
+.article-7-section-3{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article-7-section-3 > h5{
+    opacity: .4;
+    font-size: 1.5rem;
+}
 
 
 
