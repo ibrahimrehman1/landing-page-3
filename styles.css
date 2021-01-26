@@ -220,6 +220,8 @@ button:focus{
     order: 1;
     width: 480px;
     height: auto;
+    position: relative;
+    right: 80px;
 }
 
 
@@ -390,10 +392,9 @@ button:focus{
 }
 
 .article-5-section-1 > p{
-    top: 10px;
+    margin-top: 10px;
     line-height: 25px;
-    left: -1000px;
-    position: relative;
+    margin-left: 10px;
     transition-property: left;
     transition-duration: 500ms;
     transition-timing-function: ease;
@@ -410,9 +411,9 @@ button:focus{
     color: #8666ff;
 }
 
-.show-p{
+/* .show-p{
     left: 20px !important;
-}
+} */
 
 .article-6{
     padding: 2em 1em;
@@ -722,7 +723,95 @@ button:focus{
         width: 500px;
         height: 450px;
     }
+
+    .header-section-div > h1{
+        font-size: 2.5rem !important;
+    }
+
+    .header-section-div > p{
+        font-size: 1.2rem !important;
+    }
+
+    body{
+        background-size: 100vw 600px;
+    }
+
+    .article-4 > img{
+        height: 300px;
+    }
+
+    .article-5{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article-5 > section{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .article-5 > img{
+        margin-top: 60px;
+    }
+
+    .article-7-section-2{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .article-7-section-2 > div{
+        margin-bottom: 60px;
+    }
 }
+
+
+@media screen and (max-width: 900px){
+    .article-2-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-2-section > img{
+        position: static;
+    }
+
+    .article-2-sub-section{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .article-3-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article-3-sub-section{
+        align-items: center;
+    }
+
+    .article-3-section > img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .article-6{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article-6 > blockquote{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}
+
 
 @media screen and (max-width: 850px){
     .header-section{
@@ -742,13 +831,94 @@ button:focus{
     }
 
     body{
-        background-size: 100vw 1000px;
+        background-size: 100vw 900px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .article-1-section-2{
+        flex-direction: column;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+
+    .article-1-section-2 > div:nth-child(2), .article-1-section-2 > div:nth-child(3){
+        margin-top: 20px;
+    }
+
+    .article-4-section-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-4-section-2 > div{
+        margin-bottom: 80px;
+    }
+
+    .article-7-section-3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-7-section-3 > h5{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .footer-section-1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section-1 > input, .footer-section-1 > button{
+        margin-top: 40px;
+    }
+
+    .footer-section-1 > button{
+        position: static;
     }
 }
 
 @media screen and (max-width: 700px){
     .navbar > div{
         display: none;
+    }
+
+    .footer-section-2{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section-2 > div > section{
+        align-self: center;
+    }
+
+    .footer-section-2 > div > section > div > i{
+        margin-left: 0px;
+    }
+
+    .footer-section-2-divs{
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+   
+}
+
+
+
+@media screen and (max-width: 650px){
+    .article-1-section-2{
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .article-1-section-2 > div{
+        margin-top: 40px;
     }
 }
 
@@ -768,13 +938,3 @@ button:focus{
     }
 }
 
-@media screen and (max-width: 650px){
-    .article-1-section-2{
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    .article-1-section-2 > div{
-        margin-top: 40px;
-    }
-}

@@ -14,35 +14,25 @@ window.addEventListener("scroll", (e)=>{
     }
 })
 
-window.addEventListener("load", ()=>{
-    document.querySelector("#contact-list").classList.add("add-style")
-    document.querySelector("#show-p-1").classList.add("show-p");
-})
+// window.addEventListener("load", ()=>{
+//     document.querySelector("#contact-list").classList.add("add-style")
+// })
 
-document.querySelector("#contact-list").addEventListener("click", ()=>{
-    document.querySelector("#contact-list").classList.toggle("add-style")
-    document.querySelector("#show-p-1").classList.toggle("show-p");
-    document.querySelector("#show-p-2").classList.remove("show-p");
-    document.querySelector("#show-p-3").classList.remove("show-p");
-    document.querySelector("#message-editing").classList.remove("add-style");
-    document.querySelector("#conversation-analytics").classList.remove("add-style");
+// document.querySelector("#contact-list").addEventListener("click", ()=>{
+//     document.querySelector("#contact-list").classList.toggle("add-style");
+//     document.querySelector("#message-editing").classList.remove("add-style");
+//     document.querySelector("#conversation-analytics").classList.remove("add-style");
 
-})
+// })
 
-document.querySelector("#message-editing").addEventListener("click", ()=>{
-    document.querySelector("#message-editing").classList.toggle("add-style")
-    document.querySelector("#show-p-2").classList.toggle("show-p");
-    document.querySelector("#show-p-1").classList.remove("show-p");
-    document.querySelector("#show-p-3").classList.remove("show-p");
-    document.querySelector("#contact-list").classList.remove("add-style");
-    document.querySelector("#conversation-analytics").classList.remove("add-style");
-})
+// document.querySelector("#message-editing").addEventListener("click", ()=>{
+//     document.querySelector("#message-editing").classList.toggle("add-style")
+//     document.querySelector("#contact-list").classList.remove("add-style");
+//     document.querySelector("#conversation-analytics").classList.remove("add-style");
+// })
 
-document.querySelector("#conversation-analytics").addEventListener("click", ()=>{
-    document.querySelector("#conversation-analytics").classList.toggle("add-style")
-    document.querySelector("#show-p-3").classList.toggle("show-p");
-    document.querySelector("#show-p-1").classList.remove("show-p");
-    document.querySelector("#show-p-2").classList.remove("show-p");
-    document.querySelector("#contact-list").classList.remove("add-style");
-    document.querySelector("#message-editing").classList.remove("add-style");
-})
+// document.querySelector("#conversation-analytics").addEventListener("click", ()=>{
+//     document.querySelector("#conversation-analytics").classList.toggle("add-style")
+//     document.querySelector("#contact-list").classList.remove("add-style");
+//     document.querySelector("#message-editing").classList.remove("add-style");
+// })
