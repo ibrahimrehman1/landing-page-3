@@ -27,6 +27,107 @@ body{
     background-size: 100vw 700px;
 }
 
+.move-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8666ff;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    color: white;
+    display: none;
+    z-index: 100;
+}
+
+.move-top i{
+    color: inherit;
+    font-size: 1.5rem;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+
+.move-top:hover{
+    transition-property: box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    box-shadow: 1px 1px 10px 1px #8666ff;
+}
+
+.move-top-show{
+    display: inline-block;
+}
+
+.hamburger-icon{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 45px;
+    height: 42px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    display: none;
+    z-index: 1050;
+    transition-property: top;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+#bar-1{
+    order: 1;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#bar-2{
+    order: 2;
+}
+
+#bar-3{
+    order: 3;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.hamburger-icon > span{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+.tilt-1{
+    transform: translate(0px, 5px) rotate(40deg);
+}
+
+.tilt-2{
+    display: none;
+}
+
+.tilt-3{
+    transform: translate(0px, -8px) rotate(140deg);
+    
+}
+
+.show-div{
+    display: block !important;
+    float: none !important;
+    text-align: center;
+}
+
+.links{
+    height: 200px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .navbar{
     position: fixed;
     top: 0px;
@@ -38,6 +139,10 @@ body{
     transition-timing-function: ease;
     transition-duration: 600ms;
 
+}
+
+.navbar-extend{
+    height: 400px;
 }
 
 .navbar > img{
@@ -137,7 +242,7 @@ button:focus{
 .header-section > img{
     order: 2;
     width: 600px;
-    height: 500px;
+    height: auto;
 }
 
 .article-1{
@@ -332,7 +437,7 @@ button:focus{
 }
 
 .article-4 > img{
-    height: 400px;
+    height: auto;
     width: 100%;
 }
 
@@ -721,7 +826,6 @@ button:focus{
 @media screen and (max-width: 950px){
     .header-section > img{
         width: 500px;
-        height: 450px;
     }
 
     .header-section-div > h1{
@@ -734,10 +838,6 @@ button:focus{
 
     body{
         background-size: 100vw 600px;
-    }
-
-    .article-4 > img{
-        height: 300px;
     }
 
     .article-5{
@@ -864,6 +964,7 @@ button:focus{
     .article-7-section-3 > h5{
         margin-bottom: 40px;
     }
+
 }
 
 @media screen and (max-width: 750px){
@@ -879,12 +980,25 @@ button:focus{
 
     .footer-section-1 > button{
         position: static;
+        width: 150px;
+        height: 50px;
     }
-}
 
-@media screen and (max-width: 700px){
-    .navbar > div{
-        display: none;
+    .footer-section-1 > input{
+        width: 300px;
+        height: 50px;
+    }
+
+    .footer-section-1 > h2{
+        font-size: 1.6rem;
+    }
+
+    .footer-section-2 h4{
+        font-size: 1.5rem !important;
+    }
+
+    .footer-section-2 p{
+        font-size: .8rem;
     }
 
     .footer-section-2{
@@ -906,7 +1020,56 @@ button:focus{
         margin-top: 40px;
     }
 
+    .footer-section-2-divs > a{
+        font-size: .8rem;
+    }
+
+    .copyright-statement{
+        font-size: .8rem;
+    }
+
+    .article-3-sub-section > h2, .article-4-section-1 > div > h2, .article-2-sub-section > h2, .article-1-section-1 > div > h2{
+        font-size: 1.8rem;
+    }
+
+    .header-section-div > h1{
+        font-size: 1.8rem !important;
+    }
+
+    .header-section-div > p{
+        font-size: 1rem !important;
+    }
+
+    #hidden-div{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .article-6 > img{
+        width: 400px;
+    }
+
+    .article-6 > blockquote > div > q{
+        font-size: 1rem;
+    }
    
+    .article-5 > img{
+        width: 400px;
+    }
+
+    .article-5 > section > h2{
+        font-size: 1.8rem;
+    }
+
+    .article-5 > section > h3{
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -926,7 +1089,6 @@ button:focus{
 @media screen and (max-width: 550px){
     .header-section > img{
         width: 320px;
-        height: 280px;
     }
 
     .article-1{
@@ -936,5 +1098,109 @@ button:focus{
     .article-1-section-1{
         margin-top: 80px;
     }
+
+    .article-7-section-1 h2{
+        font-size: 1.5rem !important;
+    }
+
+    .article-7-section-1 p{
+        font-size: .8rem;
+    }
+
+    .article-7 h3{
+        font-size: 1.5rem !important;
+    }
+
+    .article-7 h4{
+        font-size: 1.8rem !important;
+    }
+
+    .article-7 span{
+        font-size: .8rem;
+    }
+
+    .article-7 button, .article-3-sub-section > button, .article-2-sub-section > button{
+        padding: 0.8em 1.2em !important;
+        width: 130px !important;
+    }
+
+    .article-7-section-3 h5{
+        font-size: 1.2rem;
+    }
+
+    .article-6 > blockquote > div > q{
+        font-size: .8rem;
+    }
+
+    .article-6 > blockquote > div > footer{
+        font-size: 1rem;
+    }
+
+    .article-5 p{
+        font-size: .8rem;
+    }
+
+    .article-5 > section > h2{
+        font-size: 1.5rem;
+    }
+
+    .article-5 > section > h3{
+        font-size: 1.2rem;
+    }
+
+    .article-3-sub-section > h2{
+        font-size: 1.5rem;
+    }
+
+    .article-3-section > img, .article-2-section > img{
+        width: 400px;
+    }
+
+    .article-4-section-1 > div > h2{
+        font-size: 1.5rem;
+    }
+
+    .article-4-section-2 h3, .article-4-section-2 i{
+        font-size: 1.8rem !important;
+    }
+
+    .article-2-sub-section > h2, .article-1-section-1 > div > h2, .header-section-div > h1{
+        font-size: 1.5rem !important;
+    }
+
+    .article-2-sub-section > p, .article-1-section-2 p, .article-1-section-1 > div > p,.article-4-section-1 > div > p, .article-3-sub-section > ul, .article-3-sub-section > p, .header-section-div > p{
+        font-size: .8rem !important;
+    }
+
+    .article-1-section-2 h3{
+        font-size: 1rem;
+    }
+
+    .header-section-div > div > button:nth-child(2){
+        width: 120px;
+        height: 40px;
+    }
+
+    .header-section-div > div > button:nth-child(2) > i{
+        font-size: 1.2rem !important;
+    }
+
+    .header-section-div > div > button:nth-child(2) > span{
+        vertical-align: initial !important;
+    }
+
+    .header-section-div > div > button:nth-child(1){
+        width: 100px;
+        height: 40px;
+    }
+
+    body{
+        background-size: 100vw 680px;
+    }
+
+    .article-1{
+        margin-top: 0px !important;
+    }
+
 }
 
