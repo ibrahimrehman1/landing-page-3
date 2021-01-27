@@ -446,7 +446,7 @@ button:focus{
     padding: 1em 0em;
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 40px;
 
 }
@@ -526,7 +526,7 @@ button:focus{
     margin-bottom: 60px;
     background-color: #f9f7ff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -821,7 +821,16 @@ button:focus{
 
 
 
+@media screen and (min-width: 1400px){
+    .article-6 > blockquote{
+        width: 600px;
+    }
 
+    .header-section{
+        justify-content: space-around;
+    }
+
+}
 
 @media screen and (max-width: 950px){
     .header-section > img{
@@ -864,6 +873,10 @@ button:focus{
 
     .article-7-section-2 > div{
         margin-bottom: 60px;
+    }
+
+    .article-5-section-1 > p{
+        margin-left: 0px;
     }
 }
 
@@ -1202,5 +1215,55 @@ button:focus{
         margin-top: 0px !important;
     }
 
+}
+
+@media screen and (max-width: 500px){
+    .article-5-section-1{
+        width: 380px;
+    }
+
+    .article-5 > img{
+        align-self: center;
+    }
+
+    .article-7-section-2 > div{
+        width: 250px;
+        min-height: 450px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+    .article-6 > img, .article-5 > img, .article-3-section > img, .article-2-section > img{
+        width: 350px;
+    }
+
+    .article-2-sub-section, .article-3-sub-section{
+        width: 300px;
+    }
+
+    .article-7-section-1 > div > p, .article-5-section-1 > p, .article-4-section-1 > div > p, .article-1-section-1 > div > p{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .article-6 > img, .article-5 > img, .article-3-section > img, .article-2-section > img{
+        width: 300px;
+    }
+
+    .article-1-section-1 > div, .article-4-section-1 > div, .article-5-section-1, .article-7-section-1 > div{
+        width: auto;
+    }
+
+    .article-4-section-1, .article-5-section-1, .article-3-section{
+        padding: 1em;
+    }
+
+    .article-7-section-2 > div{
+        width: 240px;
+        min-height: 350px;
+    }
 }
 
