@@ -9,6 +9,10 @@
     font-family: Roboto;
 }
 
+*{
+    user-select: none;
+}
+
 :root{
     --icon-color: #8666ff;
 }
@@ -530,6 +534,10 @@ button:focus{
 
 }
 
+.article-6 q{
+    font-size: 1rem;
+}
+
 .article-6 > img{
     order: 2;
     margin-top: 60px;
@@ -550,7 +558,7 @@ button:focus{
 .article-6 > blockquote > div > footer{
     font-weight: bold;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
  
 .article-7-section-2{
@@ -878,8 +886,8 @@ button:focus{
     .article-5-section-1 > p{
         margin-left: 0px;
     }
-}
 
+}
 
 @media screen and (max-width: 900px){
     .article-2-section{
