@@ -1,3 +1,3 @@
-# Landing-Page-3
+# Fully Responsive Stribe Landing Page
 
-Link -> https://ibrahimrehman1.github.io/Landing-Page-3/
+https://ibrahimrehman1.github.io/stribe-landing-page/
